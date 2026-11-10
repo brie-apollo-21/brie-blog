@@ -1,0 +1,5 @@
+{
+    "layout": "collection-layout.html",
+    "permalink": "collection/{{ page.fileSlug | slugify }}/",
+    "tags": ["collection"]
+}

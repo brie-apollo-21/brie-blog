@@ -1,0 +1,4 @@
+---
+title: Teas
+contentType: "tea"
+---

@@ -1,1 +1,32 @@
-<!doctype html><title>Page title</title><p>Hi</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/bundle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Collections</h1>
+    <ul>
+        {% for post in collections.collection %}
+            <li>
+                <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+                <time datetime="{{ post.data.date | date: '%Y-%m-%d' }}">{{ post.data.date | date: "%B %d, %Y" }}</time>
+                <div>{{ post.data.excerpt }}</div>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <hr>
+
+    <h1>Posts</h1>
+    {% for post in collections.post reversed %}
+        <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+        <time datetime="{{ post.data.date | date: '%Y-%m-%d' }}">{{ post.data.date | date: "%B %d, %Y" }}</time>
+        <div>{{ post.data.excerpt }}</div>
+    {% endfor %}
+
+    <script src="/bundle.js"></script>
+</body>
+</html>

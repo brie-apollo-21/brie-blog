@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/bundle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <hr>
+    {% for post in collections[contentType] %}
+        <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+        <time datetime="{{ post.data.date | date: '%Y-%m-%d' }}">{{ post.data.date | date: "%B %d, %Y" }}</time>
+        <div>{{ post.data.excerpt }}</div>
+    {% endfor %}
+
+    <script src="/bundle.js"></script>
+</body>
+</html>

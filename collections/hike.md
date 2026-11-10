@@ -1,0 +1,4 @@
+---
+title: Hiking
+contentType: "hike"
+---

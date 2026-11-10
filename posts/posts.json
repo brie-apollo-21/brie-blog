@@ -1,0 +1,5 @@
+{
+    "layout": "post-layout.html",
+    "permalink": "/{{ page.fileSlug | slugify }}/",
+    "tags": ["post"]
+}

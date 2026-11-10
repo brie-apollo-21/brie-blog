@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/bundle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <header>
+        <h1>{{ title }}</h1>
+        <time datetime="{{ date | date: '%Y-%m-%d' }}">{{ date | date: "%B %d, %Y" }}</time>
+        <p>
+            <ul class="tags-list">
+                <strong>Tags:</strong>
+                {% for tag in tags %}
+                    {% if tag != "post" %}
+                        <li>{{ tag }}</li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </p>
+    </header>
+    <hr>
+    <main>
+        {{ content }}
+    </main>
+</body>
+</html>
