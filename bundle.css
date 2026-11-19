@@ -5,13 +5,13 @@
 /* --- Thin --- */
 @font-face {
   font-family: 'DraftingMono';
-  src: url('/fonts/DraftingMono/woff2/DraftingMono-Thin.woff2') format('woff2');
+  src: url('assets/fonts/DraftingMono/woff2/DraftingMono-Thin.woff2') format('woff2');
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: 'DraftingMono';
-  src: url('/fonts/DraftingMono/woff2/DraftingMono-ThinItalic.woff2') format('woff2');
+  src: url('assets/fonts/DraftingMono/woff2/DraftingMono-ThinItalic.woff2') format('woff2');
   font-weight: 100;
   font-style: italic;
 }
@@ -19,13 +19,13 @@
 /* --- Extra Light --- */
 @font-face {
   font-family: 'DraftingMono';
-  src: url('/fonts/DraftingMono/woff2/DraftingMono-ExtraLight.woff2') format('woff2');
+  src: url('assets/fonts/DraftingMono/woff2/DraftingMono-ExtraLight.woff2') format('woff2');
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: 'DraftingMono';
-  src: url('/fonts/DraftingMono/woff2/DraftingMono-ExtraLightItalic.woff2') format('woff2');
+  src: url('assets/fonts/DraftingMono/woff2/DraftingMono-ExtraLightItalic.woff2') format('woff2');
   font-weight: 200;
   font-style: italic;
 }
@@ -33,13 +33,13 @@
 /* --- Light --- */
 @font-face {
   font-family: 'DraftingMono';
-  src: url('/fonts/DraftingMono/woff2/DraftingMono-Light.woff2') format('woff2');
+  src: url('assets/fonts/DraftingMono/woff2/DraftingMono-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: 'DraftingMono';
-  src: url('/fonts/DraftingMono/woff2/DraftingMono-LightItalic.woff2') format('woff2');
+  src: url('assets/fonts/DraftingMono/woff2/DraftingMono-LightItalic.woff2') format('woff2');
   font-weight: 300;
   font-style: italic;
 }
@@ -47,13 +47,13 @@
 /* --- Regular --- */
 @font-face {
   font-family: 'DraftingMono';
-  src: url('/fonts/DraftingMono/woff2/DraftingMono-Regular.woff2') format('woff2');
+  src: url('assets/fonts/DraftingMono/woff2/DraftingMono-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'DraftingMono';
-  src: url('/fonts/DraftingMono/woff2/DraftingMono-Italic.woff2') format('woff2');
+  src: url('assets/fonts/DraftingMono/woff2/DraftingMono-Italic.woff2') format('woff2');
   font-weight: 400;
   font-style: italic;
 }
@@ -61,13 +61,13 @@
 /* --- Medium --- */
 @font-face {
   font-family: 'DraftingMono';
-  src: url('/fonts/DraftingMono/woff2/DraftingMono-Medium.woff2') format('woff2');
+  src: url('assets/fonts/DraftingMono/woff2/DraftingMono-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: 'DraftingMono';
-  src: url('/fonts/DraftingMono/woff2/DraftingMono-MediumItalic.woff2') format('woff2');
+  src: url('assets/fonts/DraftingMono/woff2/DraftingMono-MediumItalic.woff2') format('woff2');
   font-weight: 500;
   font-style: italic;
 }
@@ -75,13 +75,13 @@
 /* --- Semi Bold --- */
 @font-face {
   font-family: 'DraftingMono';
-  src: url('/fonts/DraftingMono/woff2/DraftingMono-SemiBold.woff2') format('woff2');
+  src: url('assets/fonts/DraftingMono/woff2/DraftingMono-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: 'DraftingMono';
-  src: url('/fonts/DraftingMono/woff2/DraftingMono-SemiBoldItalic.woff2') format('woff2');
+  src: url('assets/fonts/DraftingMono/woff2/DraftingMono-SemiBoldItalic.woff2') format('woff2');
   font-weight: 600;
   font-style: italic;
 }
@@ -89,13 +89,13 @@
 /* --- Bold --- */
 @font-face {
   font-family: 'DraftingMono';
-  src: url('/fonts/DraftingMono/woff2/DraftingMono-Bold.woff2') format('woff2');
+  src: url('assets/fonts/DraftingMono/woff2/DraftingMono-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: 'DraftingMono';
-  src: url('/fonts/DraftingMono/woff2/DraftingMono-BoldItalic.woff2') format('woff2');
+  src: url('assets/fonts/DraftingMono/woff2/DraftingMono-BoldItalic.woff2') format('woff2');
   font-weight: 700;
   font-style: italic;
 }
@@ -114,11 +114,17 @@
     body {
         font-size: 1em;
     }
+    img {
+        width: 30%;
+    }
 }
 
 @media (max-width: 768px) {
     body {
         font-size: 0.75em;
+    }
+    img {
+        width: 60%;
     }
 }
 
@@ -130,11 +136,25 @@ body {
     color: var(--text-main);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 h1, h2, h3, h4, h5, h6, p {
     margin: 0.25em 0;
 }
 
+
 hr {
+    margin: 1.5em 0;
+}
+
+img
+{
+    align-self: center;
+    height: auto;
+    border: black 1px solid;
     margin: 1.5em 0;
 }
 

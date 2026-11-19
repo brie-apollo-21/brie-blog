@@ -24,4 +24,5 @@ export default function (eleventyConfig) {
 
 	eleventyConfig.addPassthroughCopy("bundle.css")
 	eleventyConfig.addPassthroughCopy("bundle.js")
+	eleventyConfig.addPassthroughCopy("assets/images")
 };
